@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font_awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- first page work here -->
+    <div class="quizApp">
+      <img src="images/question.jpg" alt="question" />
+      <div class="inner_text">
+        <h2>Quiz App With Fixed Time</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+          consequuntur! Officia, earum voluptatibus iusto velit.
+        </p>
+        <h2>Quiz App With Fixed Time</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="first_btn">
+        <button>Start Quiz</button>
+      </div>
+    </div>
+    <!-- second Page with rulesPage -->
+    <div class="ruleBox">
+      <header>
+        <h2>Some Rules of this Quiz</h2>
+      </header>
+      <ol>
+        <li>You will have only <span>15 secounds</span> per each question</li>
+        <li>Once you select your answer, it can't be undone</li>
+        <li>You can't select any option once time goes off.</li>
+        <li>You can't exit from the Quiz while you're playing.</li>
+        <li>You'll get points on the basic of your correct answer</li>
+      </ol>
+      <div class="rules_sectionBtn">
+        <button class="ExitButton">Exit Quiz</button>
+        <button class="ContinueButton">Continue</button>
+      </div>
+    </div>
+    <!-- thirthPage with question page work here -->
+    <div class="Questions">
+      <!-- header_section -->
+      <header>
+        <div>Start Exam</div>
+        <div class="TimeCount">
+          <div class="timeLeft">Time off</div>
+          <div class="timeRight">15</div>
+        </div>
+      </header>
+      <div class="timeLine"></div>
+      <!-- body -->
+      <div class="section">
+        <span class="text1"> </span>
+        <div class="myQuestion"></div>
+      </div>
+      <!-- footer -->
+      <div class="footer_section">
+        <div class="total_question"></div>
+        <button class="nextBtn">Next Que</button>
+      </div>
+    </div>
+
+    <!--====== Result box===== -->
+    <div class="result_box">
+      <div class="result_img">
+        <img src="images/Quiz_win_image.webp" alt="" />
+      </div>
+      <div class="all_text_btn">
+        <div class="result_text">You Have Finished This Exam</div>
+        <div class="score_text">
+          Congratulation👍 You Got <span class="ScoreValue"> 0 </span> Out Of 4
+        </div>
+        <div class="result_buttons">
+          <button class="resetBtn1">Reply</button>
+          <button class="resetBtn2">Quit Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- js link here -->
+    <script src="app.js"></script>
+  </body>
+</html>

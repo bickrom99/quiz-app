@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #e3e3e397;
+  line-height: 1.3rem;
+  font-size: 1.1rem;
+}
+img {
+  max-width: 100%;
+}
+.quizApp {
+  width: 100%;
+  max-width: 350px;
+  margin: 70px auto 0;
+  background: white;
+  box-shadow: 0 0 10px 5px #cecece57;
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+}
+.quizApp img {
+  width: 100%;
+  height: 220px;
+  margin: auto;
+  display: flex;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+.quizApp .inner_text {
+  padding: 0 20px;
+}
+.quizApp .inner_text h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.quizApp .inner_text p {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.quizApp .first_btn button {
+  border: none;
+  padding: 15px 30px;
+  margin-left: 206px;
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 200px;
+  font-size: 1.1rem;
+  background: #ff6918;
+  color: white;
+  cursor: pointer;
+}
+.first_btn button:hover {
+  background: #16a3fb;
+}
+
+/* ----------Second page desing work here------- */
+.ruleBox {
+  width: 100%;
+  max-width: 350px;
+  height: 578px;
+  margin: 70px auto 0;
+  background: white;
+  box-shadow: 0 0 10px 5px #cecece57;
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+  display: none;
+}
+.ruleBox header h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 2px solid;
+}
+.ruleBox ol {
+  box-sizing: border-box;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+.ruleBox ol li {
+  line-height: 1.8rem;
+}
+.ruleBox ol span {
+  color: #20a7fc;
+  font-weight: bold;
+}
+.rules_sectionBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rules_sectionBtn .ExitButton {
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #eb6e2bf6;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 100px;
+  cursor: pointer;
+}
+.rules_sectionBtn .ContinueButton {
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #eb6e2bf6;
+  color: white;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 100px;
+  cursor: pointer;
+}
+.rules_sectionBtn .ExitButton:hover {
+  background: red;
+}
+.rules_sectionBtn .ContinueButton:hover {
+  background: #20a7fc;
+}
+
+/* -=======Quistion page design here=========- */
+.Questions {
+  width: 100%;
+  max-width: 350px;
+  height: 545px;
+  margin: 70px auto 0;
+  background: white;
+  box-shadow: 0 0 10px 5px #cecece57;
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+  display: none;
+}
+.Questions header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Questions header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.Questions header .TimeCount {
+  display: inline-flex;
+}
+.TimeCount .timeLeft {
+  background: #39ccf86e;
+  padding: 3px 15px 3px 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.TimeCount .timeRight {
+  background: #000;
+  color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 3px;
+}
+
+.section {
+  padding: 25px 20px;
+}
+.section .text1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  word-spacing: 0.4rem;
+}
+.myQuestion {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.timeLine {
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #2c15f7;
+}
+.myQuestion .options {
+  border: 2px solid #21a4ea6a;
+  padding: 15px;
+  border-radius: 8px;
+  background: #c8f5fd41;
+  cursor: pointer;
+}
+/* ----option correct answer--- */
+.options.correct {
+  background: #d4f5db;
+  color: #155724;
+  border: 1px solid #ddfbe4;
+}
+.options.correct:hover {
+  background: #d4f5db;
+  color: #155724;
+  border: 1px solid #ddfbe4;
+}
+/* ----option incorrect answer--- */
+.options.Incorrect {
+  color: #155724;
+  background: #ffada2d1;
+  border: 1px solid #ffada2d1;
+}
+.options.Incorrect:hover {
+  color: #155724;
+  background: #ffada2d1;
+  border: 1px solid #ffada2d1;
+}
+.options.disable {
+  pointer-events: none;
+}
+.options:hover {
+  background: #c8f5fd93;
+  border: 2px solid #21a4eab3;
+}
+.footer_section {
+  border-top: 2px solid #49484852;
+  padding: 20px 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_section button {
+  padding: 12px 20px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #eb6e2bf6;
+  color: white;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 100px;
+  cursor: pointer;
+}
+.footer_section button:hover {
+  transition: background 1ms ease;
+  background: #20a7fc;
+}
+/* ======Result box design here======== */
+.result_box {
+  width: 100%;
+  max-width: 350px;
+  height: 580px;
+  margin: 70px auto 0;
+  background: white;
+  box-shadow: 0 0 10px 5px #cecece57;
+  border-radius: 20px;
+  display: none;
+}
+
+.result_img img {
+  width: 100%;
+  height: 220px;
+  margin: auto;
+  display: flex;
+  padding-bottom: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.all_text_btn {
+  padding: 100px 20px 0 20px;
+}
+.result_text {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  margin-top: 80px;
+}
+.score_text {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.result_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.result_buttons .resetBtn1 {
+  padding: 12px 25px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #2049ffdd;
+  font-size: 1rem;
+  color: #ffffffe8;
+}
+.result_buttons .resetBtn1:hover {
+  background: #2049ffbe;
+  transition: all 0.3s ease;
+}
+.result_buttons .resetBtn2 {
+  padding: 12px 25px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fa23e4;
+  font-size: 1rem;
+  color: #ffffffe8;
+}
+.result_buttons .resetBtn2:hover {
+  background: #fa2323e0;
+  transition: all 0.3s ease;
+}
